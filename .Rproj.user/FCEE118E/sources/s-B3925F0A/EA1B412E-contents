@@ -7,8 +7,8 @@ Typically I have a project structure like this.
 	|                 | ---> target journal two...
 	|
 	|----> ./analysis |-----> myproject.Rproj (R project file, sets this directory as working directory)
-	                        |-----> README.md (metadata file on the analysis - for this repo, this is this file!)
-	                        |-----> .gitignore (can add directories to omit from uploading to github)
+	                  |-----> README.md (metadata file on the analysis - for this repo, this is this file!)
+	                  |-----> .gitignore (can add directories to omit from uploading to github)
                           |-----> ./data    | --> ./raw
                                             | --> ./processed
                                             | ...
