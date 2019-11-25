@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574708349754.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "88141D47",
+    "lastKnownWriteTime" : 1574708378,
+    "last_content_update" : 1574708383729,
+    "path" : "~/sesync/exampleProject/analysis/figs/fig1.txt",
+    "project_path" : "figs/fig1.txt",
+    "properties" : {
+        "cursorPosition" : "0,48",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
