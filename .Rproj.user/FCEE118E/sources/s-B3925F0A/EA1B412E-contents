@@ -4,15 +4,15 @@ I usually initiate Git from either the ./myProject directory or the ./analysis d
 If it's the ./myProject directory, I use the .gitignore file to omit the ./drafts directory and the ./analysis/data directories
 If it's the ./analysis directory, I usually just omit the ./data directory.
 
-
-./myProject
-	|----> README.md (documentation on the project)
-	|----> ./drafts   | ---> target journal one... (rejected)
-	|	 	              | ---> target journal two...
-	|
-	|----> ./analysis |-----> myproject.Rproj (R project file, sets this directory as working directory)
-			              |-----> ./data    | --> ./raw
-        					                    | --> ./processed
+.myProject
++-- _README.md (documentation on the project)
++-- _drafts   
+|   +-- target journal one... (rejected)
+|	 	+-- target journal two...
++-- _analysis
+|   +-- myproject.Rproj (R project file, sets this directory as working directory)
+|		+-- _data    | --> ./raw
+|          					                    | --> ./processed
             					                | ...
             			  |-----> ./figs    | --> fig1
             				                  | --> fig2
