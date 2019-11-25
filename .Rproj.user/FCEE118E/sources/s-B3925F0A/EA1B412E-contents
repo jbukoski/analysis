@@ -4,25 +4,25 @@ I usually initiate Git from either the ./myProject directory or the ./analysis d
 If it's the ./myProject directory, I use the .gitignore file to omit the ./drafts directory and the ./analysis/data directories
 If it's the ./analysis directory, I usually just omit the ./data directory.
 
-.myProject
-+-- _README.md (documentation on the project)
-+-- _drafts   
-|   +-- target journal one... (rejected)
-|	 	+-- target journal two...
-+-- _analysis
-|   +-- myproject.Rproj (R project file, sets this directory as working directory)
-|		+-- _data    | --> ./raw
-|          					                    | --> ./processed
-            					                | ...
-            			  |-----> ./figs    | --> fig1
-            				                  | --> fig2
-            					                | ...
-            			  |-----> ./scripts | --> 01_getData.R
-            					                | --> 02_processData.R (input raw, output processe data)
-            					                | --> 03_analysis.R (analysis of data)
-            					                | --> 04_statistics.R (run stats tests)
-            					                | --> 05_figures.R (builds figures, input processed data, writes to ./figs) dir
-
+```
+./myProject
+	|----> README.md (documentation on the project)
+	|----> ./drafts   | ---> target journal one... (rejected)
+	|                 | ---> target journal two...
+	|
+	|----> ./analysis |-----> myproject.Rproj (R project file, sets this directory as working directory)
+                      |-----> ./data    | --> ./raw
+                                        | --> ./processed
+                                        | ...
+                      |-----> ./figs    | --> fig1
+                                        | --> fig2
+                                        | ...
+                      |-----> ./scripts | --> 01_getData.R
+                                        | --> 02_processData.R (input raw, output processe data)
+                                        | --> 03_analysis.R (analysis of data)
+                                        | --> 04_statistics.R (run stats tests)
+                                        | --> 05_figures.R (build figs, input from ./processed, writes to ./figs)
+```
 
 With this structure, the working directory in R will be wherever the myproject.Rproj file is. So then you can use relative paths such as ./data/raw/dataset_1.csv.
 
@@ -30,4 +30,4 @@ The .gitignore is a hidden file (hence the period at the beginning). If you put 
 
 ./data
 
-as a single line in the .gitignore file.
+as a single line in the .gitignore
