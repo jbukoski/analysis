@@ -33,3 +33,5 @@ The .gitignore is a hidden file (hence the period at the beginning). If you put 
 ./data
 
 as a single line in the .gitignore
+
+*Note* the .Rproj.user file gets created automatically when you start a R Project (do this through RStudio), so you don't need to worry about that.
