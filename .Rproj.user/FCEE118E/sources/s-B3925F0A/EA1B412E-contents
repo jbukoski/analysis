@@ -20,6 +20,7 @@ Typically I have a project structure like this.
                                             | --> 03_analysis.R (analysis of data)
                                             | --> 04_statistics.R (run stats tests)
                                             | --> 05_figures.R (build figs, input from ./processed, writes to ./figs)
+                          |-----> ./Rproj.user (this gets automatically created, don't worry about it)
 ```
 
 With this structure, the working directory in R will be wherever the myproject.Rproj file is. So then you can use relative paths such as ./data/raw/dataset_1.csv which start from wherever the .Rproj file is. **This example github repo has the .Rproj initiated from the ./analysis folder**. On my computer there is also the drafts folder next to it (from the tree above), but not uploaded to git.
