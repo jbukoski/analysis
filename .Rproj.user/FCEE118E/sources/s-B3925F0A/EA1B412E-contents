@@ -11,17 +11,17 @@ If it's the ./analysis directory, I usually just omit the ./data directory.
 	|                 | ---> target journal two...
 	|
 	|----> ./analysis |-----> myproject.Rproj (R project file, sets this directory as working directory)
-                      |-----> ./data    | --> ./raw
-                                        | --> ./processed
-                                        | ...
-                      |-----> ./figs    | --> fig1
-                                        | --> fig2
-                                        | ...
-                      |-----> ./scripts | --> 01_getData.R
-                                        | --> 02_processData.R (input raw, output processe data)
-                                        | --> 03_analysis.R (analysis of data)
-                                        | --> 04_statistics.R (run stats tests)
-                                        | --> 05_figures.R (build figs, input from ./processed, writes to ./figs)
+                          |-----> ./data    | --> ./raw
+                                            | --> ./processed
+                                            | ...
+                          |-----> ./figs    | --> fig1
+                                            | --> fig2
+                                            | ...
+                          |-----> ./scripts | --> 01_getData.R
+                                            | --> 02_processData.R (input raw, output processe data)
+                                            | --> 03_analysis.R (analysis of data)
+                                            | --> 04_statistics.R (run stats tests)
+                                            | --> 05_figures.R (build figs, input from ./processed, writes to ./figs)
 ```
 
 With this structure, the working directory in R will be wherever the myproject.Rproj file is. So then you can use relative paths such as ./data/raw/dataset_1.csv.
